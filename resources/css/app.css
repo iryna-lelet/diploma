@@ -1,0 +1,196 @@
+body{
+    position: relative;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.login-form, .signup-form{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form .btn, .signup-form .btn{
+    margin-top: 30px;
+    margin-left: 75%;
+}
+
+.newaccount-link{
+    margin-top: 45px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul i{
+    margin-right: 10px;
+}
+
+.content-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar{
+    height: 100%;
+    min-height: 100vh;
+    width: 18%;
+    background-color: #c5dbec;
+    padding-top: 20px;
+}
+
+.sidebar li {
+    padding: 15px 0;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    position: relative;
+}
+
+.sidebar li a:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: blue;
+    transition: ease-in-out 0.3s;
+}
+
+.sidebar li a:hover:before {
+    width: 100%;
+}
+
+.main-content{
+    width: 80%;
+}
+
+#eyeBtn{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+.password {
+    position: relative;
+}
+
+.controlBtns {
+    margin-top: 10px;
+    display: flex;
+}
+
+.controlBtns button:last-child {
+    margin-left: 30px;
+
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup-content{
+    width: 30%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popupCloseBtn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 15px;
+}
+
+.popupCloseBtn i {
+    font-size: 20px;
+    color: red;
+}
+
+.popup form{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup form input,
+.popup form select {
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+.popup form button{
+    width: 100px;
+    align-self: flex-end;
+}
+
+.settingsHeader{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+
+.settingsHeader h1 {
+    font-size: 30px;
+}
+
+.settingBlock {
+    margin-bottom: 55px;
+}
+
+.currentCurrencyHolder {
+    position: relative;
+}
+
+.currencySelectBtn {
+    text-decoration: none;
+    color: #000000;
+}
+
+.currencyDropdown {
+    display: none;
+    border: 1px solid #000000;
+    position: absolute;
+    padding: 15px;
+}
+
+.currencyDropdown.active {
+    display: block;
+}
+
+.currencyDropdown ul {
+    padding: 0;
+}
+
+.currencyOption {
+    cursor: pointer;
+}
+
+.currenctCurrency {
+    position: fixed;
+    bottom: 10vh;
+    right: 3vh;
+}
