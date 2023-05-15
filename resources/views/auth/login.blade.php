@@ -19,7 +19,7 @@
                 class="form-control"
                 id="username"
                 maxlength="100"
-                placeholder="Ел. почта"
+                placeholder="Email"
                 name="email"
                 value="{{ old('email') }}"
             >
@@ -31,7 +31,7 @@
                 class="form-control"
                 maxlength="50"
                 id="password"
-                placeholder="Пароль"
+                placeholder="Password"
                 name="password"
                 value="{{ old('password') }}"
             >
@@ -39,10 +39,10 @@
             <span class="text-danger" data-test-id="wrong-password">@error('password'){{ $message }} @enderror</span>
         </div>
         <div>
-            <button type="submit" id="login" class="btn btn-light">Ввойти</button>
+            <button type="submit" id="login" class="btn btn-light">Login</button>
         </div>
         <div class="newaccount-link">
-            <a href="{{ route('signup') }}" data-test-id="signup-link">У меня нет аккаунта</a>
+            <a href="{{ route('signup') }}" data-test-id="signup-link">I don't have an account</a>
         </div>
     </form>
 @endsection

@@ -19,7 +19,7 @@
                 class="form-control"
                 id="signupEmail"
                 aria-describedby="emailHelp"
-                placeholder="Почта пользователя"
+                placeholder="Email"
                 name="email"
                 value="{{ old('email') }}"
             >
@@ -31,7 +31,7 @@
                 class="form-control"
                 id="signupUsername"
                 aria-describedby="emailHelp"
-                placeholder="Имя пользователя"
+                placeholder="Username"
                 maxlength="100"
                 name="name"
                 value="{{ old('name') }}"
@@ -43,7 +43,7 @@
                 type="password"
                 class="form-control"
                 id="password"
-                placeholder="Пароль"
+                placeholder="Password"
                 maxlength="50"
                 name="password"
                 value="{{ old('password') }}"
@@ -52,10 +52,10 @@
             <span class="text-danger" data-test-id="wrong-password"> @error('password'){{ $message }} @enderror</span>
         </div>
         <div>
-            <button type="submit" class="btn btn-light">Зарегистрироваться</button>
+            <button type="submit" class="btn btn-light">Create account</button>
         </div>
         <div class="newaccount-link">
-            <a href="{{ route('login') }}" data-test-id="login-link">У меня есть аккаунт</a>
+            <a href="{{ route('login') }}" data-test-id="login-link">I have an account</a>
         </div>
     </form>
 @endsection

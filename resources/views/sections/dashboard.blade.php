@@ -10,7 +10,7 @@
 
 <div class="currenctCurrency">
     <div class="currentCurrencyHolder">
-        <a href="javascript:void(0)" class="currencySelectBtn  btn btn-secondary dropdown-toggle">Текущая валюта: <span class="currentCurrencyValue">none</span></a>
+        <a href="javascript:void(0)" class="currencySelectBtn  btn btn-secondary dropdown-toggle">Currency: <span class="currentCurrencyValue">none</span></a>
         <div class="currencyDropdown dropdown-menu" aria-labelledby="dropdownMenuButton">
             <ul>
                 <li class="currencyOption">dollar</li>

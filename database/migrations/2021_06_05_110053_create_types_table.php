@@ -22,10 +22,10 @@ class CreateTypesTable extends Migration
         DB::table('types')->insert(
             [
                 array(
-                    'name' => 'Доход',
+                    'name' => 'Incomings',
                 ),
                 array(
-                    'name' => 'Расход',
+                    'name' => 'Outgoings',
                 )
             ]
         );
